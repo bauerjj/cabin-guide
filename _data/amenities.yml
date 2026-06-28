@@ -1,0 +1,72 @@
+highlights:
+  - name: "Private Hot Tub"
+    icon: "waves"
+    description: "Soak under the stars surrounded by pine trees"
+  - name: "King Bed"
+    icon: "bed"
+    description: "Premium king bed in the cozy loft bedroom"
+  - name: "Fast WiFi"
+    icon: "wifi"
+    description: "High-speed fiber internet throughout the cabin"
+  - name: "Smart TV"
+    icon: "tv"
+    description: "Stream your favorites on the wall-mounted TV"
+  - name: "Full Kitchen"
+    icon: "chef-hat"
+    description: "Gas range, fridge, and everything you need to cook"
+  - name: "Washer & Dryer"
+    icon: "shirt"
+    description: "Samsung front-load washer and dryer in the bathroom"
+
+full_list:
+  bedroom_and_laundry:
+    - "King bed with premium linens"
+    - "Extra pillows and blankets"
+    - "Window seat / reading nook"
+    - "Closet with hangers"
+    - "Dresser for storage"
+    - "Blackout blinds"
+    - "Samsung washer & dryer"
+    - "Iron and ironing board"
+
+  bathroom:
+    - "Walk-in marble tile shower"
+    - "Gold fixtures"
+    - "Shampoo, conditioner, body wash"
+    - "Hair dryer"
+    - "Fresh towels"
+    - "Navy vanity with storage"
+
+  kitchen:
+    - "Full-size refrigerator"
+    - "Gas range and oven"
+    - "Microwave"
+    - "Coffee maker (drip + Keurig)"
+    - "Toaster"
+    - "Knife set"
+    - "Pots, pans, and baking sheets"
+    - "Dishes, glasses, and silverware"
+    - "Cooking utensils"
+    - "Spices and cooking oil"
+    - "Paper towels and dish soap"
+
+  living_area:
+    - "Leather sectional sofa"
+    - "Wall-mounted smart TV"
+    - "Streaming apps available"
+    - "Board games and books"
+    - "Mini-split AC/heating"
+    - "Spiral staircase to loft"
+
+  outdoor:
+    - "Private hot tub"
+    - "Deck with forest views"
+    - "Outdoor seating"
+    - "Driveway parking (2 cars)"
+
+  general:
+    - "Self check-in with keypad"
+    - "Smoke and CO detectors"
+    - "First aid kit"
+    - "Fire extinguisher"
+    - "Extra blankets"

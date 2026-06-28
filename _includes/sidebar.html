@@ -1,0 +1,47 @@
+<nav class="sidebar" aria-label="Main navigation">
+  <div class="sidebar__header">
+    <a href="{{ '/' | relative_url }}" class="sidebar__logo">
+      <svg class="sidebar__logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <div class="sidebar__logo-text">
+        <span class="sidebar__title">Kona Trail Cabin</span>
+        <span class="sidebar__subtitle">Guest Guide</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="sidebar__weather" id="weather-widget"></div>
+
+  <div class="sidebar__nav">
+    {% for group in site.data.navigation.groups %}
+    <div class="nav-group">
+      <div class="nav-group__title">{{ group.title }}</div>
+      {% for item in group.items %}
+      <a href="{{ item.url | relative_url }}" class="nav-item {% if page.url == item.url %}nav-item--active{% endif %}">
+        <span class="nav-item__icon">
+          {% if item.icon == "hand-wave" %}👋{% endif %}
+          {% if item.icon == "users" %}👤{% endif %}
+          {% if item.icon == "door-open" %}🔑{% endif %}
+          {% if item.icon == "wifi" %}📶{% endif %}
+          {% if item.icon == "book-open" %}📖{% endif %}
+          {% if item.icon == "utensils" %}🍳{% endif %}
+          {% if item.icon == "scroll" %}📋{% endif %}
+          {% if item.icon == "shield-alert" %}🚨{% endif %}
+          {% if item.icon == "lightbulb" %}💡{% endif %}
+          {% if item.icon == "car" %}🚗{% endif %}
+          {% if item.icon == "mountain" %}⛰️{% endif %}
+          {% if item.icon == "utensils-crossed" %}🍽️{% endif %}
+          {% if item.icon == "camera" %}📸{% endif %}
+          {% if item.icon == "list-checks" %}✅{% endif %}
+          {% if item.icon == "help-circle" %}❓{% endif %}
+        </span>
+        <span class="nav-item__text">{{ item.title }}</span>
+      </a>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="sidebar__footer">
+    <p>Hosted with care by {{ site.data.property.hosts.names }}</p>
+  </div>
+</nav>

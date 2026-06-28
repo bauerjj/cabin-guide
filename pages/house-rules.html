@@ -1,0 +1,34 @@
+---
+layout: page
+title: House Rules
+subtitle: A few things to keep in mind for a great stay
+permalink: /house-rules/
+---
+
+We keep the rules simple — it's all about being a great neighbor and taking care of the cabin so everyone can enjoy it.
+
+{% for rule in site.data.house_rules.rules %}
+<div class="rule-card">
+  <div class="rule-card__icon">
+    {% if rule.icon == "clock" %}🕓{% endif %}
+    {% if rule.icon == "users" %}👥{% endif %}
+    {% if rule.icon == "cigarette-off" %}🚭{% endif %}
+    {% if rule.icon == "paw-print" %}🐾{% endif %}
+    {% if rule.icon == "volume-x" %}🔇{% endif %}
+    {% if rule.icon == "waves" %}🛁{% endif %}
+    {% if rule.icon == "door-closed" %}🚪{% endif %}
+    {% if rule.icon == "trash-2" %}🗑️{% endif %}
+    {% if rule.icon == "thermometer" %}🌡️{% endif %}
+    {% if rule.icon == "flame-off" %}🔥{% endif %}
+  </div>
+  <div>
+    <div class="rule-card__title">{{ rule.title }}</div>
+    <div class="rule-card__text">{{ rule.description }}</div>
+  </div>
+</div>
+{% endfor %}
+
+<div class="info-card info-card--forest" style="margin-top: 24px;">
+  <div class="info-card__title">Thank you for respecting our home!</div>
+  <div class="info-card__text">These rules help us keep the cabin in great shape for all our guests. If you have any questions about what's okay, just ask — we're always happy to help.</div>
+</div>

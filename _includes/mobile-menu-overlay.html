@@ -1,0 +1,43 @@
+<div class="mobile-menu-overlay" id="mobileMenuOverlay">
+  <div class="mobile-menu">
+    <div class="mobile-menu__header">
+      <span class="mobile-menu__title">Kona Trail Cabin</span>
+      <button class="mobile-menu__close" onclick="toggleMobileMenu()" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu__weather" id="weather-widget-mobile"></div>
+
+    <div class="mobile-menu__grid">
+      {% for group in site.data.navigation.groups %}
+      {% for item in group.items %}
+      <a href="{{ item.url | relative_url }}" class="mobile-menu__item {% if page.url == item.url %}mobile-menu__item--active{% endif %}">
+        <span class="mobile-menu__icon">
+          {% if item.icon == "hand-wave" %}👋{% endif %}
+          {% if item.icon == "users" %}👤{% endif %}
+          {% if item.icon == "door-open" %}🔑{% endif %}
+          {% if item.icon == "wifi" %}📶{% endif %}
+          {% if item.icon == "book-open" %}📖{% endif %}
+          {% if item.icon == "utensils" %}🍳{% endif %}
+          {% if item.icon == "scroll" %}📋{% endif %}
+          {% if item.icon == "shield-alert" %}🚨{% endif %}
+          {% if item.icon == "lightbulb" %}💡{% endif %}
+          {% if item.icon == "car" %}🚗{% endif %}
+          {% if item.icon == "mountain" %}⛰️{% endif %}
+          {% if item.icon == "utensils-crossed" %}🍽️{% endif %}
+          {% if item.icon == "camera" %}📸{% endif %}
+          {% if item.icon == "list-checks" %}✅{% endif %}
+          {% if item.icon == "help-circle" %}❓{% endif %}
+        </span>
+        <span class="mobile-menu__label">{{ item.title }}</span>
+      </a>
+      {% endfor %}
+      {% endfor %}
+    </div>
+
+    <div class="mobile-menu__footer">
+      Hosted by {{ site.data.property.hosts.names }} · ⭐ {{ site.data.property.rating }}
+    </div>
+  </div>
+</div>

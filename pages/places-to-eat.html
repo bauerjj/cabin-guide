@@ -1,0 +1,88 @@
+---
+layout: page
+title: Places to Eat & Drink
+subtitle: Our favorite spots in Flagstaff
+permalink: /places-to-eat/
+---
+
+<h2>Breakfast &amp; Brunch</h2>
+
+{% for place in site.data.local_guide.places_to_eat.breakfast %}
+<div class="place-card{% if place.image %} place-card--has-image{% endif %}">
+  {% if place.image %}
+  <img class="place-card__image" src="{{ '/assets/images/places/' | append: place.image | relative_url }}" alt="{{ place.name }}" loading="lazy">
+  {% endif %}
+  <div class="place-card__body">
+    <div class="place-card__name">{{ place.name }}</div>
+    <div class="place-card__desc">{{ place.description }}</div>
+    <span class="place-card__vibe">{{ place.vibe }}</span>
+    {% if place.map %}
+    <div class="place-card__actions">
+      <a href="https://www.google.com/maps/dir/?api=1&origin=2634+Kona+Trail,+Flagstaff,+AZ+86005&destination={{ place.map }}" target="_blank" rel="noopener" class="place-card__map-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Directions
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
+
+<h2>Lunch &amp; Dinner</h2>
+
+{% for place in site.data.local_guide.places_to_eat.lunch_dinner %}
+<div class="place-card{% if place.image %} place-card--has-image{% endif %}">
+  {% if place.image %}
+  <img class="place-card__image" src="{{ '/assets/images/places/' | append: place.image | relative_url }}" alt="{{ place.name }}" loading="lazy">
+  {% endif %}
+  <div class="place-card__body">
+    <div class="place-card__name">{{ place.name }}</div>
+    <div class="place-card__desc">{{ place.description }}</div>
+    <span class="place-card__vibe">{{ place.vibe }}</span>
+    {% if place.map %}
+    <div class="place-card__actions">
+      <a href="https://www.google.com/maps/dir/?api=1&origin=2634+Kona+Trail,+Flagstaff,+AZ+86005&destination={{ place.map }}" target="_blank" rel="noopener" class="place-card__map-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Directions
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
+
+<h2>Breweries &amp; Drinks</h2>
+
+<p>Flagstaff has a fantastic craft beer scene!</p>
+
+{% for place in site.data.local_guide.places_to_eat.drinks %}
+<div class="place-card{% if place.image %} place-card--has-image{% endif %}">
+  {% if place.image %}
+  <img class="place-card__image" src="{{ '/assets/images/places/' | append: place.image | relative_url }}" alt="{{ place.name }}" loading="lazy">
+  {% endif %}
+  <div class="place-card__body">
+    <div class="place-card__name">{{ place.name }}</div>
+    <div class="place-card__desc">{{ place.description }}</div>
+    <span class="place-card__vibe">{{ place.vibe }}</span>
+    {% if place.map %}
+    <div class="place-card__actions">
+      <a href="https://www.google.com/maps/dir/?api=1&origin=2634+Kona+Trail,+Flagstaff,+AZ+86005&destination={{ place.map }}" target="_blank" rel="noopener" class="place-card__map-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Directions
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
+
+<div class="info-card info-card--highlight" style="margin-top: 24px;">
+  <div class="info-card__title">Quick Picks</div>
+  <div class="info-card__text">
+    <strong>Best pizza:</strong> Pizzicletta<br>
+    <strong>Best burger:</strong> Diablo Burger<br>
+    <strong>Best brunch:</strong> MartAnne's or Toasted Owl<br>
+    <strong>Best date night:</strong> Brix or Coppa Cafe<br>
+    <strong>Best brewery:</strong> Mother Road (for classics) or Dark Sky (for vibes)
+  </div>
+</div>

@@ -1,0 +1,27 @@
+title: "Kona Trail Cabin | Guest Guide"
+description: "Your complete guide to our mountain cabin in Flagstaff, Arizona"
+url: "https://bauerjj.github.io"
+baseurl: "/cabin-guide"
+
+markdown: kramdown
+permalink: pretty
+
+sass:
+  style: compressed
+  sass_dir: _sass
+
+plugins:
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .sass-cache
+  - node_modules

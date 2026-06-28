@@ -1,0 +1,94 @@
+name: "Kona Trail Cabin"
+tagline: "Hot Tub ~ King Bed ~ Fast WiFi"
+address: "2634 Kona Trail, Flagstaff, AZ 86005 (Unit B)"
+neighborhood: "Kachina Village"
+guests: 4
+bedrooms: 1
+beds: 2
+bathrooms: 1
+rating: 4.9
+reviews: 122
+superhost: true
+
+hosts:
+  names: "Justin & Becca"
+  response_time: "Within an hour"
+  about: "We love hosting and want you to have the best Flagstaff experience. Don't hesitate to reach out with any questions!"
+
+checkin:
+  method: "Self check-in with keypad"
+  code_info: "Your unique 4-digit door code will be sent before arrival"
+  time: "4:00 PM"
+  early_checkin: "Early check-in may be available upon request"
+
+checkout:
+  time: "11:00 AM"
+  late_checkout: "Late checkout may be available upon request"
+
+wifi:
+  network: "KonaTrail-Guest"
+  password: "CHANGE_ME"
+  speed: "High-speed fiber"
+  tip: "Best signal is in the living room area"
+
+parking:
+  description: "Free driveway parking for 2 vehicles"
+  notes: "Pull all the way forward to leave room for the second car"
+
+coordinates:
+  lat: 35.1983
+  lon: -111.6513
+
+hero_image: "cabin-15.jpg"
+exterior_image: "cabin-11.jpg"
+
+photos:
+  exterior:
+    - image: "cabin-15.jpg"
+      alt: "Cabin exterior - full view with wraparound deck among pine trees"
+    - image: "cabin-11.jpg"
+      alt: "Cabin front entrance with stone steps and wood siding"
+  living_room:
+    - image: "cabin-02.jpg"
+      alt: "Living room with vaulted wood ceiling, spiral staircase, and leather sectional"
+    - image: "cabin-08.jpg"
+      alt: "Living room with spiral staircase, TV, and French doors to the deck"
+    - image: "cabin-17.jpg"
+      alt: "Open floor plan showing living room, kitchen, and loft"
+    - image: "cabin-18.jpg"
+      alt: "Living room with TV, loft view, and kitchen"
+    - image: "cabin-19.jpg"
+      alt: "Dining area with spiral staircase, French doors, and woven wall art"
+  kitchen:
+    - image: "cabin-04.jpg"
+      alt: "Kitchen with butcher block counters, gas range, and white cabinets"
+    - image: "cabin-05.jpg"
+      alt: "Kitchen close-up showing gas range and open shelving"
+    - image: "cabin-14.jpg"
+      alt: "Kitchen and dining area with round table and leather chairs"
+  bedroom:
+    - image: "cabin-07.jpg"
+      alt: "Loft bedroom with king bed, TV, and sitting nook"
+    - image: "cabin-12.jpg"
+      alt: "King bed with plush pillows and window seat"
+    - image: "cabin-13.jpg"
+      alt: "King bed with balcony door access"
+    - image: "cabin-03.jpg"
+      alt: "Loft sitting area with green chairs and A-frame wood beams"
+    - image: "cabin-16.jpg"
+      alt: "Loft reading nook with green chairs overlooking living room"
+  bathroom:
+    - image: "cabin-01.jpg"
+      alt: "Bathroom with navy vanity, walk-in marble shower, and washer/dryer"
+    - image: "cabin-06.jpg"
+      alt: "Bathroom with glass-enclosed shower and gold fixtures"
+  hot_tub:
+    - image: "cabin-09.jpg"
+      alt: "Private hot tub on patio surrounded by pine trees"
+    - image: "cabin-20.jpg"
+      alt: "Hot tub with bubbling water and forest backdrop"
+  full_interior:
+    - image: "cabin-10.jpg"
+      alt: "Full interior view showing vaulted ceiling, spiral staircase, and open layout"
+    - image: "cabin-21.jpg"
+      alt: "Interior view with loft, spiral staircase, kitchen, and dining"

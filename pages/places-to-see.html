@@ -1,0 +1,46 @@
+---
+layout: page
+title: Places to See
+subtitle: Day trips and scenic drives worth the journey
+permalink: /places-to-see/
+---
+
+{% for place in site.data.local_guide.places_to_see %}
+<div class="place-card{% if place.image %} place-card--has-image{% endif %}">
+  {% if place.image %}
+  <img class="place-card__image" src="{{ '/assets/images/places/' | append: place.image | relative_url }}" alt="{{ place.name }}" loading="lazy">
+  {% endif %}
+  <div class="place-card__body">
+    <div class="place-card__name">{{ place.name }}</div>
+    <div class="place-card__meta">{{ place.distance }}</div>
+    <div class="place-card__desc">{{ place.description }}</div>
+    {% if place.map %}
+    <div class="place-card__actions">
+      <a href="https://www.google.com/maps/dir/?api=1&origin=2634+Kona+Trail,+Flagstaff,+AZ+86005&destination={{ place.map }}" target="_blank" rel="noopener" class="place-card__map-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Directions
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
+
+<h2>Scenic Drives</h2>
+
+<h3>Oak Creek Canyon (Flagstaff to Sedona)</h3>
+<p>The most beautiful drive in the area. Wind through a narrow canyon with towering red and white cliffs. Stop at Slide Rock State Park in summer for natural waterslides. Allow 1-2 hours each way with stops.</p>
+
+<h3>Bearizona Loop (via Williams)</h3>
+<p>Head west to Williams on I-40, visit Bearizona Wildlife Park, then grab lunch on Route 66 in the charming town of Williams. A great half-day trip.</p>
+
+<h3>Sunset Crater &amp; Wupatki Loop</h3>
+<p>A stunning loop drive north of Flagstaff through volcanic landscapes and ancient pueblo ruins. The whole loop takes 2-3 hours with stops.</p>
+
+<h3>Lake Mary Road</h3>
+<p>Drive south past Upper and Lower Lake Mary for beautiful forest and lake scenery. Great for a picnic. Mormon Lake Lodge at the end has a rustic steakhouse.</p>
+
+<div class="info-card info-card--forest" style="margin-top: 24px;">
+  <div class="info-card__title">Save with the America the Beautiful Pass</div>
+  <div class="info-card__text">For $80/year, this pass covers entrance to all national parks and monuments — including Grand Canyon, Walnut Canyon, Sunset Crater, Wupatki, and Montezuma Castle. It pays for itself in one or two visits!</div>
+</div>

@@ -1,0 +1,40 @@
+rules:
+  - icon: "clock"
+    title: "Check-in & Check-out"
+    description: "Check-in after 4:00 PM, check-out by 11:00 AM"
+
+  - icon: "users"
+    title: "Max Guests"
+    description: "Maximum 4 guests — no parties or events"
+
+  - icon: "cigarette-off"
+    title: "No Smoking"
+    description: "No smoking anywhere on the property, including the deck"
+
+  - icon: "paw-print"
+    title: "No Pets"
+    description: "Sorry, no pets allowed (service animals welcome)"
+
+  - icon: "volume-x"
+    title: "Quiet Hours"
+    description: "Please keep noise to a minimum after 10:00 PM — we have neighbors"
+
+  - icon: "waves"
+    title: "Hot Tub Rules"
+    description: "Replace the cover after each use. No glass near the hot tub. Shower before entering."
+
+  - icon: "door-closed"
+    title: "Lock Up"
+    description: "Please lock the door when you leave — the keypad locks automatically after 30 seconds"
+
+  - icon: "trash-2"
+    title: "Trash"
+    description: "Take trash to the outdoor bin before checkout. Keep bins closed to avoid wildlife."
+
+  - icon: "thermometer"
+    title: "Thermostat"
+    description: "Use the mini-split for heating/cooling. Please don't set below 65F or above 75F."
+
+  - icon: "flame-off"
+    title: "No Open Flames"
+    description: "No candles, incense, or outdoor fires. Flagstaff has frequent fire restrictions."

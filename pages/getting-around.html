@@ -1,0 +1,87 @@
+---
+layout: page
+title: Getting Around
+subtitle: Distances, directions, and driving tips
+permalink: /getting-around/
+---
+
+<h2>From Phoenix</h2>
+
+<ul>
+  <li><strong>Distance:</strong> {{ site.data.local_guide.getting_around.from_phoenix.distance }}</li>
+  <li><strong>Drive time:</strong> {{ site.data.local_guide.getting_around.from_phoenix.time }}</li>
+  <li>{{ site.data.local_guide.getting_around.from_phoenix.notes }}</li>
+</ul>
+
+<h2>Distances from the Cabin</h2>
+
+<div class="info-card">
+  <div class="info-card__title">📍 Downtown Flagstaff</div>
+  <div class="info-card__text">{{ site.data.local_guide.getting_around.from_cabin.downtown }}</div>
+  <div class="place-card__actions" style="margin-top: 8px;">
+    <a href="https://www.google.com/maps/dir/?api=1&origin=2634+Kona+Trail,+Flagstaff,+AZ+86005&destination=Historic+Downtown+Flagstaff,+AZ" target="_blank" rel="noopener" class="place-card__map-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Directions
+    </a>
+  </div>
+</div>
+
+<div class="info-card">
+  <div class="info-card__title">🏜️ Sedona</div>
+  <div class="info-card__text">{{ site.data.local_guide.getting_around.from_cabin.sedona }}</div>
+  <div class="place-card__actions" style="margin-top: 8px;">
+    <a href="https://www.google.com/maps/dir/?api=1&origin=2634+Kona+Trail,+Flagstaff,+AZ+86005&destination=Sedona,+AZ" target="_blank" rel="noopener" class="place-card__map-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Directions
+    </a>
+  </div>
+</div>
+
+<div class="info-card">
+  <div class="info-card__title">🏞️ Grand Canyon (South Rim)</div>
+  <div class="info-card__text">{{ site.data.local_guide.getting_around.from_cabin.grand_canyon_south_rim }}</div>
+  <div class="place-card__actions" style="margin-top: 8px;">
+    <a href="https://www.google.com/maps/dir/?api=1&origin=2634+Kona+Trail,+Flagstaff,+AZ+86005&destination=Grand+Canyon+South+Rim+Visitor+Center,+AZ" target="_blank" rel="noopener" class="place-card__map-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Directions
+    </a>
+  </div>
+</div>
+
+<div class="info-card">
+  <div class="info-card__title">🌵 Phoenix</div>
+  <div class="info-card__text">{{ site.data.local_guide.getting_around.from_cabin.phoenix }}</div>
+  <div class="place-card__actions" style="margin-top: 8px;">
+    <a href="https://www.google.com/maps/dir/?api=1&origin=2634+Kona+Trail,+Flagstaff,+AZ+86005&destination=Phoenix,+AZ" target="_blank" rel="noopener" class="place-card__map-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Directions
+    </a>
+  </div>
+</div>
+
+<div class="info-card">
+  <div class="info-card__title">☄️ Meteor Crater</div>
+  <div class="info-card__text">{{ site.data.local_guide.getting_around.from_cabin.meteor_crater }}</div>
+  <div class="place-card__actions" style="margin-top: 8px;">
+    <a href="https://www.google.com/maps/dir/?api=1&origin=2634+Kona+Trail,+Flagstaff,+AZ+86005&destination=Meteor+Crater,+Winslow,+AZ" target="_blank" rel="noopener" class="place-card__map-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Directions
+    </a>
+  </div>
+</div>
+
+<h2>Driving Tips</h2>
+
+{% for tip in site.data.local_guide.getting_around.tips %}
+<div class="info-card info-card--highlight">
+  <div class="info-card__text">{{ tip }}</div>
+</div>
+{% endfor %}
+
+<h2>Gas Stations</h2>
+
+<p>The nearest gas stations are in Flagstaff, about 15 minutes north. Fill up before heading to the cabin, especially in winter.</p>
+
+<h2>Ride Share</h2>
+
+<p>Uber and Lyft operate in Flagstaff but availability can be limited, especially late at night. Plan ahead if you're going out to dinner or breweries downtown.</p>

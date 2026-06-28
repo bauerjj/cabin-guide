@@ -1,0 +1,21 @@
+---
+layout: page
+title: FAQ
+subtitle: Quick answers to common questions
+permalink: /faq/
+---
+
+{% for item in site.data.faq.questions %}
+<div class="faq-item">
+  <div class="faq-item__question">
+    {{ item.question }}
+    <svg class="faq-item__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><polyline points="6 9 12 15 18 9"/></svg>
+  </div>
+  <div class="faq-item__answer">{{ item.answer }}</div>
+</div>
+{% endfor %}
+
+<div class="info-card info-card--forest" style="margin-top: 32px;">
+  <div class="info-card__title">Still have questions?</div>
+  <div class="info-card__text">Don't hesitate to reach out through the Airbnb app. We're happy to help and typically respond within an hour!</div>
+</div>

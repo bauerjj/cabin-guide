@@ -1,0 +1,82 @@
+---
+layout: page
+title: Things to Do
+subtitle: Adventures await in every direction
+permalink: /things-to-do/
+---
+
+<h2>Outdoor Adventures</h2>
+
+{% for place in site.data.local_guide.things_to_do.outdoor %}
+<div class="place-card{% if place.image %} place-card--has-image{% endif %}">
+  {% if place.image %}
+  <img class="place-card__image" src="{{ '/assets/images/places/' | append: place.image | relative_url }}" alt="{{ place.name }}" loading="lazy">
+  {% endif %}
+  <div class="place-card__body">
+    <div class="place-card__name">{{ place.name }}</div>
+    <div class="place-card__meta">{{ place.distance }} from cabin</div>
+    <div class="place-card__desc">{{ place.description }}</div>
+    {% if place.map %}
+    <div class="place-card__actions">
+      <a href="https://www.google.com/maps/dir/?api=1&origin=2634+Kona+Trail,+Flagstaff,+AZ+86005&destination={{ place.map }}" target="_blank" rel="noopener" class="place-card__map-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Directions
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
+
+<h2>In Town</h2>
+
+{% for place in site.data.local_guide.things_to_do.in_town %}
+<div class="place-card{% if place.image %} place-card--has-image{% endif %}">
+  {% if place.image %}
+  <img class="place-card__image" src="{{ '/assets/images/places/' | append: place.image | relative_url }}" alt="{{ place.name }}" loading="lazy">
+  {% endif %}
+  <div class="place-card__body">
+    <div class="place-card__name">{{ place.name }}</div>
+    <div class="place-card__meta">{{ place.distance }} from cabin</div>
+    <div class="place-card__desc">{{ place.description }}</div>
+    {% if place.map %}
+    <div class="place-card__actions">
+      <a href="https://www.google.com/maps/dir/?api=1&origin=2634+Kona+Trail,+Flagstaff,+AZ+86005&destination={{ place.map }}" target="_blank" rel="noopener" class="place-card__map-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Directions
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
+
+<h2>Seasonal Highlights</h2>
+
+<h3>Winter (December - March)</h3>
+<ul>
+  <li><strong>Skiing &amp; snowboarding</strong> at Arizona Snowbowl</li>
+  <li><strong>Cross-country skiing</strong> in the Coconino National Forest</li>
+  <li><strong>Snow play</strong> at Wing Mountain or Crowley Pit</li>
+</ul>
+
+<h3>Summer (June - September)</h3>
+<ul>
+  <li><strong>Hiking</strong> — hundreds of trails from easy to strenuous</li>
+  <li><strong>Mountain biking</strong> on world-class trail systems</li>
+  <li><strong>Kayaking/fishing</strong> at Lake Mary (~20 min)</li>
+</ul>
+
+<h3>Fall (September - November)</h3>
+<ul>
+  <li><strong>Aspen viewing</strong> — drive the Inner Basin Trail or Snowbowl road</li>
+  <li><strong>Flagstaff Festival of Science</strong> (late September)</li>
+  <li><strong>Cooler hiking</strong> with fewer crowds</li>
+</ul>
+
+<h3>Spring (March - May)</h3>
+<ul>
+  <li><strong>Wildflower blooms</strong> in lower elevations</li>
+  <li><strong>Late-season skiing</strong> some years into April</li>
+  <li><strong>Farmers markets</strong> starting up</li>
+</ul>
