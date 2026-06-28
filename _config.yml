@@ -1,7 +1,7 @@
 title: "Kona Trail Cabin | Guest Guide"
 description: "Your complete guide to our mountain cabin in Flagstaff, Arizona"
-url: "https://bauerjj.github.io"
-baseurl: "/cabin-guide"
+url: "https://konacabin.com"
+baseurl: ""
 
 markdown: kramdown
 permalink: pretty
