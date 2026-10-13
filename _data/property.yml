@@ -1,14 +1,11 @@
-name: "Kona Trail Cabin"
-tagline: "Hot Tub ~ King Bed ~ Fast WiFi"
+name: "Kona Cabin"
+tagline: "Fireplace ~ Hot Tub ~ King Bed"
 address: "2634 Kona Trail, Flagstaff, AZ 86005 (Unit B)"
 neighborhood: "Kachina Village"
 guests: 4
 bedrooms: 1
 beds: 2
 bathrooms: 1
-rating: 4.9
-reviews: 122
-superhost: true
 
 hosts:
   names: "Justin & Becca"
@@ -26,8 +23,8 @@ checkout:
   late_checkout: "Late checkout may be available upon request"
 
 wifi:
-  network: "KonaTrail-Guest"
-  password: "CHANGE_ME"
+  network: "JuneNet"
+  password: "See chalkboard"
   speed: "High-speed fiber"
   tip: "Best signal is in the living room area"
 
@@ -39,56 +36,56 @@ coordinates:
   lat: 35.1983
   lon: -111.6513
 
-hero_image: "cabin-15.jpg"
-exterior_image: "cabin-11.jpg"
+hero_image: "cabin-01.jpg"
+exterior_image: "cabin-02.jpg"
 
 photos:
   exterior:
-    - image: "cabin-15.jpg"
-      alt: "Cabin exterior - full view with wraparound deck among pine trees"
-    - image: "cabin-11.jpg"
-      alt: "Cabin front entrance with stone steps and wood siding"
-  living_room:
-    - image: "cabin-02.jpg"
-      alt: "Living room with vaulted wood ceiling, spiral staircase, and leather sectional"
-    - image: "cabin-08.jpg"
-      alt: "Living room with spiral staircase, TV, and French doors to the deck"
-    - image: "cabin-17.jpg"
-      alt: "Open floor plan showing living room, kitchen, and loft"
-    - image: "cabin-18.jpg"
-      alt: "Living room with TV, loft view, and kitchen"
-    - image: "cabin-19.jpg"
-      alt: "Dining area with spiral staircase, French doors, and woven wall art"
-  kitchen:
-    - image: "cabin-04.jpg"
-      alt: "Kitchen with butcher block counters, gas range, and white cabinets"
-    - image: "cabin-05.jpg"
-      alt: "Kitchen close-up showing gas range and open shelving"
-    - image: "cabin-14.jpg"
-      alt: "Kitchen and dining area with round table and leather chairs"
-  bedroom:
-    - image: "cabin-07.jpg"
-      alt: "Loft bedroom with king bed, TV, and sitting nook"
-    - image: "cabin-12.jpg"
-      alt: "King bed with plush pillows and window seat"
-    - image: "cabin-13.jpg"
-      alt: "King bed with balcony door access"
-    - image: "cabin-03.jpg"
-      alt: "Loft sitting area with green chairs and A-frame wood beams"
-    - image: "cabin-16.jpg"
-      alt: "Loft reading nook with green chairs overlooking living room"
-  bathroom:
     - image: "cabin-01.jpg"
-      alt: "Bathroom with navy vanity, walk-in marble shower, and washer/dryer"
+      alt: "Cabin exterior with front steps among tall pine trees"
+    - image: "cabin-02.jpg"
+      alt: "Front entrance with gray double doors and Adirondack chairs"
+  living_room:
+    - image: "cabin-03.jpg"
+      alt: "Living room with fireplace, spiral staircase, and loft above"
+    - image: "cabin-04.jpg"
+      alt: "Living room with vaulted wood ceiling, spiral staircase, and arched window"
+    - image: "cabin-05.jpg"
+      alt: "Open living and dining area under exposed wood beams"
     - image: "cabin-06.jpg"
-      alt: "Bathroom with glass-enclosed shower and gold fixtures"
-  hot_tub:
+      alt: "Wall-mounted TV above the gas fireplace"
+  kitchen:
+    - image: "cabin-07.jpg"
+      alt: "Kitchen and dining table beside the spiral staircase"
+    - image: "cabin-08.jpg"
+      alt: "Coffee station with grinder, brewer, and mugs"
+  bedroom:
     - image: "cabin-09.jpg"
-      alt: "Private hot tub on patio surrounded by pine trees"
-    - image: "cabin-20.jpg"
-      alt: "Hot tub with bubbling water and forest backdrop"
-  full_interior:
+      alt: "Loft bedroom with king bed and window shutters"
     - image: "cabin-10.jpg"
-      alt: "Full interior view showing vaulted ceiling, spiral staircase, and open layout"
+      alt: "Loft with desk and railing overlooking the living room"
+    - image: "cabin-11.jpg"
+      alt: "Loft with exposed wood beams and sitting area"
+    - image: "cabin-12.jpg"
+      alt: "Loft workspace with desk and armchair"
+    - image: "cabin-13.jpg"
+      alt: "Loft closet with hangers, luggage rack, and dresser"
+    - image: "cabin-14.jpg"
+      alt: "Loft balcony railing overlooking the pines"
+    - image: "cabin-15.jpg"
+      alt: "Balcony view of the forest"
+  bathroom:
+    - image: "cabin-16.jpg"
+      alt: "Bathroom with navy vanity and large walk-in shower"
+    - image: "cabin-17.jpg"
+      alt: "Glass-enclosed marble shower and washer/dryer"
+  hot_tub:
+    - image: "cabin-18.jpg"
+      alt: "Private hot tub in a fenced patio"
+    - image: "cabin-19.jpg"
+      alt: "Hot tub with bubbling water"
+  outdoor:
+    - image: "cabin-20.jpg"
+      alt: "Fenced yard with Adirondack chairs and hot tub"
     - image: "cabin-21.jpg"
-      alt: "Interior view with loft, spiral staircase, kitchen, and dining"
+      alt: "Fire pit seating area among the pines"

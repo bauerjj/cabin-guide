@@ -2,6 +2,15 @@ questions:
   - question: "What's the check-in process?"
     answer: "Self check-in with a keypad. Your unique 4-digit code will be sent before arrival. Just punch it in and you're home!"
 
+  - question: "How many people does the cabin sleep, and what are the beds?"
+    answer: "Up to 4 guests. The loft bedroom has a king bed, and the living room has a sofa bed that pulls out to a queen."
+
+  - question: "Is there a fireplace?"
+    answer: "Yes! The living room has a high-output gas fireplace. Use the black remote to turn it on and set a target temperature (SMART mode adjusts the flame automatically), or adjust the flame manually. The remote also controls the blower and the light. See the House Guide for details. Please turn it off when you're away or asleep, and keep items clear of it."
+
+  - question: "Is the tap water safe to drink?"
+    answer: "Yes. There's a reverse osmosis drinking water unit by the kitchen sink for filtered drinking water."
+
   - question: "Is there parking?"
     answer: "Yes! Free driveway parking for up to 2 vehicles. Pull all the way forward to leave room."
 
@@ -9,7 +18,7 @@ questions:
     answer: "The hot tub is always on and ready to use. Just remove the cover, hop in, and replace the cover when you're done. Please shower before entering and no glass near the tub."
 
   - question: "What's the WiFi password?"
-    answer: "Network: KonaTrail-Guest. The password is provided in your booking confirmation message."
+    answer: "Network: JuneNet. The password is written on the chalkboard in the cabin."
 
   - question: "Is there a grocery store nearby?"
     answer: "The nearest grocery store is in Flagstaff, about 15 minutes north. We recommend stocking up before arriving. There's a Fry's, Safeway, Sprouts, and Natural Grocers."
@@ -33,4 +42,4 @@ questions:
     answer: "About 7,000 feet. Drink plenty of water, especially if you're coming from lower elevations. Alcohol hits harder at altitude!"
 
   - question: "Is there a washer and dryer?"
-    answer: "Yes! A Samsung front-load washer and dryer is in the bathroom. Detergent pods are provided."
+    answer: "Yes! A full-size washer and dryer is in the bathroom. Detergent pods are provided."
