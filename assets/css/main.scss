@@ -707,6 +707,26 @@ a { color: $forest; text-decoration: none; }
   line-height: 1.5;
 }
 
+.remote-photo {
+  margin: 16px 0;
+  text-align: center;
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: $radius-sm;
+  }
+
+  figcaption {
+    margin-top: 6px;
+    font-size: 0.8rem;
+    color: $text-muted;
+  }
+}
+
 .photo-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
