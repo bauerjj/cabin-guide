@@ -1042,3 +1042,29 @@ a { color: $forest; text-decoration: none; }
 .mobile-menu__weather .weather-forecast__temps {
   color: $text-light;
 }
+
+// Availability calendar
+.avail__nav { display: flex; align-items: center; justify-content: space-between; margin: 12px 0; }
+.avail__range { font-weight: 600; color: $forest-deep; text-align: center; }
+.avail__btn {
+  width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(0, 0, 0, 0.15);
+  background: $white; font-size: 1.4rem; line-height: 1; cursor: pointer;
+  &:disabled { opacity: 0.3; cursor: default; }
+}
+.avail__months { display: grid; grid-template-columns: 1fr; gap: 20px; @media (min-width: $tablet) { grid-template-columns: 1fr 1fr; } }
+.avail__title { font-weight: 600; margin-bottom: 6px; text-align: center; }
+.avail__grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px; }
+.avail__dow { text-align: center; font-size: 0.7rem; color: $text-muted; padding: 2px 0; }
+.avail__day {
+  text-align: center; padding: 8px 0; border-radius: 6px; font-size: 0.85rem;
+  &--open { background: rgba(58, 107, 90, 0.15); color: $forest-deep; }
+  &--booked { background: rgba(0, 0, 0, 0.08); color: $text-muted; text-decoration: line-through; }
+  &--past, &--unknown { color: $text-muted; opacity: 0.5; }
+}
+.avail__legend { display: flex; gap: 16px; margin-top: 12px; font-size: 0.8rem; color: $text-muted; }
+.avail__swatch {
+  display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -1px;
+  &--open { background: rgba(58, 107, 90, 0.3); }
+  &--booked { background: rgba(0, 0, 0, 0.15); }
+}
+.avail__status { margin-top: 10px; font-size: 0.8rem; color: $text-muted; }

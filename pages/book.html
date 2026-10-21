@@ -1,0 +1,29 @@
+---
+layout: page
+title: Book Your Stay
+subtitle: Check which dates are open at Kona Cabin
+permalink: /book/
+---
+
+<p>Dates that are shaded and crossed out are already reserved. This calendar updates automatically from our Airbnb calendar about once an hour.</p>
+
+<div class="avail" id="availability" data-src="{{ '/assets/data/booked.json' | relative_url }}">
+  <div class="avail__nav">
+    <button type="button" class="avail__btn" id="avail-prev" aria-label="Previous months">&lsaquo;</button>
+    <div class="avail__range" id="avail-range"></div>
+    <button type="button" class="avail__btn" id="avail-next" aria-label="Next months">&rsaquo;</button>
+  </div>
+  <div class="avail__months" id="avail-months"></div>
+  <div class="avail__legend">
+    <span><i class="avail__swatch avail__swatch--open"></i> Open</span>
+    <span><i class="avail__swatch avail__swatch--booked"></i> Booked</span>
+  </div>
+  <p class="avail__status" id="avail-status"></p>
+</div>
+
+<div class="info-card info-card--highlight">
+  <div class="info-card__title">Ready to reserve?</div>
+  <div class="info-card__text">Pick open dates above, then <a href="https://www.airbnb.com/rooms/1794513814677607969" target="_blank" rel="noopener">reserve on Airbnb</a>.</div>
+</div>
+
+<script src="{{ '/assets/js/availability.js' | relative_url }}"></script>
