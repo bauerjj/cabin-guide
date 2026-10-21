@@ -63,6 +63,9 @@ groups:
       - title: "FAQ"
         url: "/faq/"
         icon: "help-circle"
+      - title: "Book Your Stay"
+        url: "/book/"
+        icon: "calendar"
 
 mobile_tabs:
   - title: "Home"
